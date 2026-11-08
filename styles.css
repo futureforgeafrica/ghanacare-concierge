@@ -39,3 +39,8 @@ footer{background:#071f17;color:#a9bab1;padding:60px 0 30px;font-size:.93rem}foo
 @media(max-width:960px){.g2,.g3,.plans,.extra,.timeline,footer .grid{grid-template-columns:1fr}.g4{grid-template-columns:1fr 1fr}.partners{grid-template-columns:repeat(2,1fr)}.timeline::before{display:none}.plan.feat{transform:none}
 .nav ul{display:none;position:absolute;top:72px;left:0;right:0;background:var(--g);flex-direction:column;padding:20px 24px;gap:16px}.nav ul.open{display:flex}.menu{display:block}.nav .btn{display:none}section{padding:70px 0}}
 @media(max-width:560px){.g4{grid-template-columns:1fr}}
+/* image proportion fix */
+img{height:auto}
+.photo img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.card img{height:auto;aspect-ratio:3/2;object-fit:cover}
+@media(max-width:960px){.photo img{aspect-ratio:3/2}}
